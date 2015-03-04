@@ -40,7 +40,6 @@ public class MainActivity extends ActionBarActivity implements OnFragmentInterac
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
 
     private Uri fileUri;
-
     private DrawerLayout drawerLayout;
     private ListView drawerListView;
 
@@ -289,14 +288,10 @@ public class MainActivity extends ActionBarActivity implements OnFragmentInterac
                 if(addressFragment == null){
                     addressFragment = AddressFragment.newInstance();
                 }
-
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 ft.replace(R.id.container, addressFragment,AddressFragment.TAG);
                 ft.addToBackStack(null);
                 ft.commitAllowingStateLoss();
-
-
-
             default:
                 break;
         }
