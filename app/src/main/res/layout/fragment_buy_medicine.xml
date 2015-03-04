@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.app.tarun.dc2.Fragments.BuyMedicineFragment"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:id="@+id/container"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/SendPrescription"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="send prescription"/>
+
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:id="@+id/sendPrescriptionButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/enterManuallyButton"
+                android:src="@drawable/ic_manually"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/yellow_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        <TextView
+            android:id="@+id/EnterManually"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="enter manually"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/PreviousOrder"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="previous order"/>
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:src="@drawable/ic_previous_orders"
+                android:id="@+id/previousOrderButton"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/sea_greenish_button_style"
+                android:layout_height="match_parent"/>
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

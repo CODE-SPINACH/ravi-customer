@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#eeeeee"
+    tools:context="com.app.tarun.dc2.Fragments.CartFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/CartAddButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add"
+                android:background="@drawable/yellow_button_style"/>
+            </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"/>
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/CartContinueButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_continue"
+                android:background="@drawable/pink_button_style"/>
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/cartContainer"
+        android:layout_weight="4"
+        android:layout_height="0dp"></FrameLayout>
+
+
+</LinearLayout>

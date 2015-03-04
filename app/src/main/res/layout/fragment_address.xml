@@ -1,0 +1,166 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.app.tarun.dc2.Fragments.AddressFragment">
+
+
+
+    <!--Horizontal Linear Layout for EDITTEXT-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="First Name"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+    <!--Horizontal Linear Layout for EDITTEXT end here(First name and last name-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="25dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Landmark"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Pincode"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="City"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="State"
+            android:inputType="text"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/Continue"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:onClick="ContinueClick"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="continue"/>
+    <com.app.tarun.dc2.CustomViews.SquareLayout
+        android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_margin="20dp"
+         android:layout_weight="1">
+
+         <ImageButton
+             android:src="@drawable/ic_continue"
+             android:scaleType="fitCenter"
+             android:id="@+id/addressContinueButton"
+             android:padding="35dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/pink_button_style"/>
+
+
+    </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

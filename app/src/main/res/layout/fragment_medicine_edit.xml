@@ -1,0 +1,118 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.tarun.dc2.Fragments.MedicineEditFragment"
+    >
+
+    <EditText
+        android:id="@+id/medicineEditText"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Medicine Name"
+        android:maxLines="1"/>
+
+    <!--Layout for Textbox-->
+
+    <!--Layout for RadioButtons
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radio_tablets"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tablets"
+                android:checked="true"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_strips"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Strip"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    Layout for RadioButtons-->
+
+    <!--Layout for Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:src="@drawable/ic_add"
+                android:id="@+id/medicineEditAddButton"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        <NumberPicker
+            android:layout_width="0dp"
+            android:id="@+id/medicineEditNumberPicker"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </NumberPicker>
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:src="@drawable/ic_continue"
+                android:id="@+id/medicineEditContinueButton"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/yellow_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+    </LinearLayout>
+
+    <!-- This is the container which will be
+    replaced by the fragment -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicineEditContainer"/>
+
+
+
+</LinearLayout>
+
+
