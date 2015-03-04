@@ -3,12 +3,15 @@ package com.app.tarun.dc2.Fragments;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -17,6 +20,7 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import com.app.tarun.dc2.Data.PrescriptionDetails;
+import com.app.tarun.dc2.Dialogs.SendPrescriptionDialog;
 import com.app.tarun.dc2.OnFragmentInteractionListener;
 import com.app.tarun.dc2.R;
 
@@ -61,6 +65,7 @@ public class PrescriptionEditFragment extends android.support.v4.app.Fragment {
         View view = inflater.inflate(R.layout.fragment_prescription, container, false);
 
         final NumberPicker numberPicker = (NumberPicker)view.findViewById(R.id.numberPicker);
+        ImageButton addPrescriptionButton = (ImageButton)view.findViewById(R.id.addPrescriptionButton);
         ImageButton imageButton = (ImageButton)view.findViewById(R.id.prescriptionImageButton);
         ImageButton continueButton = (ImageButton)view.findViewById(R.id.prescriptionContinue);
         final EditText notesEditText = (EditText)view.findViewById(R.id.notesEditText);
@@ -71,6 +76,22 @@ public class PrescriptionEditFragment extends android.support.v4.app.Fragment {
 
         numberPicker.setMaxValue(30);
         numberPicker.setMinValue(0);
+
+        //Events on buttons
+        addPrescriptionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SendPrescriptionDialog dialog = new SendPrescriptionDialog(getActivity());
+                dialog.show();
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                Window window = dialog.getWindow();
+                lp.copyFrom(window.getAttributes());
+                //This makes the dialog take up the full width
+                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+                lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+                window.setAttributes(lp);
+            }
+        });
 
         //setting the previous values if the prescription details are being edited
         if(isBeingEdited){
@@ -113,7 +134,7 @@ public class PrescriptionEditFragment extends android.support.v4.app.Fragment {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                 if(newVal == 0)
-                    textView.setText("as specified in the prescription");
+                    textView.setText("As Prescribed");
                 else
                     textView.setText(newVal + " days");
             }
@@ -143,6 +164,18 @@ public class PrescriptionEditFragment extends android.support.v4.app.Fragment {
                 }
             }
         });
+
+
+
+        TextView prescriptionForText = (TextView)view.findViewById(R.id.prescriptionForText);
+        TextView daysTextView = (TextView)view.findViewById(R.id.daysTextView);
+        TextView noteEditText = (TextView)view.findViewById(R.id.notesEditText);
+
+        //Assign custom fonts
+        Typeface typeFace=Typeface.createFromAsset(getActivity().getAssets(),"fonts/gothic.ttf");
+        prescriptionForText.setTypeface(typeFace);
+        daysTextView.setTypeface(typeFace);
+        noteEditText.setTypeface(typeFace);
         return view;
     }
 

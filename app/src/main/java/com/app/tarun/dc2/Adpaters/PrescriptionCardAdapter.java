@@ -54,6 +54,20 @@ public class PrescriptionCardAdapter extends ArrayAdapter<PrescriptionDetails> {
 
         ViewHolder holder = new ViewHolder();
 
+        /*TextView serialNoTextView = (TextView)view.findViewById(R.id.serialNoTextView);
+        TextView prescriptionNumber = (TextView)view.findViewById(R.id.prescriptionNumber);
+        TextView prescriptionDate = (TextView)view.findViewById(R.id.prescriptionDate);
+        TextView prescriptionDaysWord = (TextView)view.findViewById(R.id.prescriptionDaysWord);
+        TextView daysTextView = (TextView)view.findViewById(R.id.daysTextView);
+
+        //Assign custom fonts
+        Typeface typeFace=Typeface.createFromAsset(getAssets(),"fonts/gothic.ttf");
+        serialNoTextView.setTypeface(typeFace);
+        prescriptionNumber.setTypeface(typeFace);
+        prescriptionDate.setTypeface(typeFace);
+        prescriptionDaysWord.setTypeface(typeFace);
+        daysTextView.setTypeface(typeFace);*/
+
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.cards_prescription, parent, false);
@@ -78,6 +92,9 @@ public class PrescriptionCardAdapter extends ArrayAdapter<PrescriptionDetails> {
         PrescriptionDetails prescriptionDetails = getItem(position);
         holder.sNoTextView.setText((position + 1) + "");
         holder.daysTextView.setText(prescriptionDetails.getDays() + "");
+
+
+
         return view;
     }
 }

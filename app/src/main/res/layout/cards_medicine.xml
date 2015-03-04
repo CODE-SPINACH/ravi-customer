@@ -19,7 +19,7 @@
 
         <com.app.tarun.dc2.CustomViews.SquareLayout
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             >
             <TextView
@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:text="1"
                 android:id="@+id/serialNoTextView1"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="#fff"
                 android:background="#fedcba32"
                 android:gravity="center"
@@ -79,13 +79,14 @@
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:id="@+id/medicineCardCloseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:background="#FFF"
             android:src="@drawable/ic_cancel_2"
-            android:layout_gravity="center"
+            android:layout_weight="0.3"
 
             />
+
 
     </LinearLayout>
 
