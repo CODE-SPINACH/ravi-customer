@@ -42,7 +42,7 @@
             android:gravity="center_vertical"
             android:textSize="20sp"
             android:paddingLeft="20dp"
-            android:text="Crocin 350mg"/>
+            android:text="Crocin 250mg"/>
 
         <LinearLayout
             android:layout_width="0dp"

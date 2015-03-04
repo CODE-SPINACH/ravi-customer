@@ -7,33 +7,61 @@
     android:id="@+id/container"
     tools:context="com.app.tarun.dc2.Fragments.PrescriptionEditFragment">
 
-    <TextView
-        android:gravity="center"
-        android:layout_weight="0.7"
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Medicine required for (days) : "/>
+        android:text="Prescription for (days) : "
+        android:layout_weight="0.8"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/daysTextView"
+        android:text="as prescribed"
+        android:layout_weight="1"
+        />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1.5"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <TextView
-            android:gravity="center"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:textSize="15sp"
-            android:id="@+id/daysTextView"
-            android:text="as specified in the prescription"
-            android:layout_weight="2"/>
+
         <NumberPicker
             android:id="@+id/numberPicker"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="0.5"
+            android:layout_marginRight="20dp"/>
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/prescriptionContinue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_continue"
+                android:background="@drawable/green_button_style"/>
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
         </LinearLayout>
 
     <ImageButton
@@ -56,18 +84,7 @@
             android:layout_height="match_parent"
             android:hint="Notes"/>
 
-        <com.app.tarun.dc2.CustomViews.SquareLayout
-            android:layout_weight="0.8"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:gravity="center"
-                android:id="@+id/prescriptionContinue"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_continue"
-                android:background="@drawable/green_button_style"/>
-        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
         </LinearLayout>
 
 
