@@ -15,7 +15,9 @@
         <item name="android:background">@drawable/tab_button</item>
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
-
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">4dp</item>
+        <item name="android:textStyle">italic</item>
 
     </style>
 

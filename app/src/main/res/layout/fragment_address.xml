@@ -1,6 +1,20 @@
+
+
+
 <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    >
+
+<LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -9,6 +23,9 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.app.tarun.dc2.Fragments.AddressFragment">
+
+
+
 
 
 
@@ -47,7 +64,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="Phone Number"
             android:inputType="phone"
             android:layout_marginTop="25dp"/>
@@ -56,7 +72,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="Address"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
@@ -64,7 +79,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="Address"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
@@ -121,46 +135,12 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:id="@+id/Continue"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:onClick="ContinueClick"
-            android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:text="continue"/>
-    <com.app.tarun.dc2.CustomViews.SquareLayout
-        android:layout_width="0dp"
-         android:layout_height="match_parent"
-         android:layout_margin="20dp"
-         android:layout_weight="1">
-
-         <ImageButton
-             android:src="@drawable/ic_continue"
-             android:scaleType="fitCenter"
-             android:id="@+id/addressContinueButton"
-             android:padding="35dp"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@drawable/pink_button_style"/>
-
-
-    </com.app.tarun.dc2.CustomViews.SquareLayout>
 
 
 
-    </LinearLayout>
 
 </LinearLayout>
 
+</ScrollView>
 
+</LinearLayout>

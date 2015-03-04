@@ -57,6 +57,7 @@ public class CurrentOrderFragment extends android.support.v4.app.Fragment {
 
         tabPageIndicator.setViewPager(viewPager,0);
 
+
         return view;
     }
 

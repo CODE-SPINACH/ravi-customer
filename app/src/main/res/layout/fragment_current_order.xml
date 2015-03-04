@@ -2,8 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/tab_layout"
     android:orientation="vertical"
-    android:background="#eeeeee"
+    android:background="#FFFFFF"
+    android:layout_marginTop="20dp"
     tools:context="com.app.tarun.dc2.Fragments.CurrentOrderFragment">
 
     <com.viewpagerindicator.TabPageIndicator
@@ -17,7 +19,8 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_weight="5"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        >
 
     </android.support.v4.view.ViewPager>
 

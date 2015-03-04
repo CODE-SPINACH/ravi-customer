@@ -16,7 +16,8 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginTop="15dp">
 
         <com.app.tarun.dc2.CustomViews.SquareLayout
             android:layout_width="0dp"

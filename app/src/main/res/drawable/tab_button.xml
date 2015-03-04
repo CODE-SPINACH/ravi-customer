@@ -3,14 +3,23 @@
     <item android:state_pressed="true" >
         <shape>
             <solid
-                android:color="#68cb9d" />
+                android:color="#FFFFFF" />
+
+
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <solid
+        android:color="#FFFFFF"/>
 
         </shape>
     </item>
     <item>
         <shape>
             <solid
-                android:color="#77daac" />
+                android:color="#EEEEEE" />
+
         </shape>
     </item>
 </selector>
