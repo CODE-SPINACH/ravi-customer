@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:background="#FFF"
             android:src="@drawable/ic_cancel_2"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:layout_gravity="center"
 
             />
