@@ -79,11 +79,10 @@
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:id="@+id/medicineCardCloseButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
             android:background="#FFF"
             android:src="@drawable/ic_cancel_2"
-            android:layout_weight="0.8"
             android:layout_gravity="center"
 
             />
