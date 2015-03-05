@@ -25,7 +25,7 @@ android:gravity="center">
 
             <ImageButton
                 android:id="@+id/firstTimeSlot"
-                android:src="@drawable/ic_edit"
+                android:src="@drawable/ic_timezone9"
                 android:scaleType="fitCenter"
                 android:padding="20dp"
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@ android:gravity="center">
             android:layout_weight="1">
 
             <ImageButton
-                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+                android:src="@drawable/ic_timezone12"
                 android:scaleType="fitCenter"
                 android:padding="20dp"
                 android:id="@+id/secondTimeSlot"
@@ -113,7 +113,7 @@ android:gravity="center">
 
             <ImageButton
                 android:id="@+id/thirdTimeSLot"
-                android:src="@drawable/ic_manually"
+                android:src="@drawable/ic_timezone3"
                 android:scaleType="fitCenter"
                 android:padding="20dp"
                 android:layout_width="match_parent"
@@ -163,7 +163,7 @@ android:gravity="center">
             android:layout_margin="10dp"
             android:layout_weight="1">
             <ImageButton
-                android:src="@drawable/ic_previous_orders"
+                android:src="@drawable/ic_timezone6"
                 android:id="@+id/fourthTimeSlot"
                 android:scaleType="fitCenter"
                 android:padding="20dp"

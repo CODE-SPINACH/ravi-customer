@@ -28,6 +28,7 @@ import com.app.tarun.dc2.Fragments.BuyMedicineFragment;
 import com.app.tarun.dc2.Fragments.CartFragment;
 import com.app.tarun.dc2.Fragments.HomeScreenFragment;
 import com.app.tarun.dc2.Fragments.MedicineEditFragment;
+import com.app.tarun.dc2.Fragments.NotificationFragment;
 import com.app.tarun.dc2.Fragments.TimeSlotFragment;
 import com.app.tarun.dc2.Fragments.PrescriptionEditFragment;
 
@@ -296,6 +297,55 @@ public class MainActivity extends ActionBarActivity implements OnFragmentInterac
                 ft.addToBackStack(null);
                 ft.commitAllowingStateLoss();
                 break;
+
+            case R.id.firstTimeSlot:
+                NotificationFragment notificationFragment =
+                        (NotificationFragment)getSupportFragmentManager().findFragmentByTag(NotificationFragment.TAG);
+                if(notificationFragment == null) {
+                    notificationFragment = NotificationFragment.newInstance();
+                }
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.replace(R.id.container, notificationFragment, NotificationFragment.TAG);
+                ft.addToBackStack(null);
+                ft.commitAllowingStateLoss();
+                break;
+
+            case R.id.secondTimeSlot:
+                NotificationFragment notificationFragment2 =
+                        (NotificationFragment)getSupportFragmentManager().findFragmentByTag(NotificationFragment.TAG);
+                if(notificationFragment2 == null) {
+                    notificationFragment2 = NotificationFragment.newInstance();
+                }
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.replace(R.id.container, notificationFragment2, NotificationFragment.TAG);
+                ft.addToBackStack(null);
+                ft.commitAllowingStateLoss();
+                break;
+
+            case R.id.thirdTimeSLot:
+                NotificationFragment notificationFragment3 =
+                        (NotificationFragment)getSupportFragmentManager().findFragmentByTag(NotificationFragment.TAG);
+                if(notificationFragment3 == null) {
+                    notificationFragment3 = NotificationFragment.newInstance();
+                }
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.replace(R.id.container, notificationFragment3, NotificationFragment.TAG);
+                ft.addToBackStack(null);
+                ft.commitAllowingStateLoss();
+                break;
+
+            case R.id.fourthTimeSlot:
+                NotificationFragment notificationFragment4 =
+                        (NotificationFragment)getSupportFragmentManager().findFragmentByTag(NotificationFragment.TAG);
+                if(notificationFragment4 == null) {
+                    notificationFragment4 = NotificationFragment.newInstance();
+                }
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.replace(R.id.container, notificationFragment4, NotificationFragment.TAG);
+                ft.addToBackStack(null);
+                ft.commitAllowingStateLoss();
+                break;
+
 
             case R.id.CartContinueButton:
                 AddressFragment addressFragment =
