@@ -1,54 +1,96 @@
 
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.app.tarun.dc2.Fragments.AddressFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            >
 
 
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+            <!--Layout for Buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
 
 
-<ScrollView
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-    >
+                <com.app.tarun.dc2.CustomViews.SquareLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="50dp">
 
-<LinearLayout
-
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.app.tarun.dc2.Fragments.AddressFragment">
+                    <ImageButton
+                        android:src="@drawable/ic_edit"
+                        android:id="@+id/contactInfoEditButton"
+                        android:scaleType="fitCenter"
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/green_button_style"/>
 
 
-
+                </com.app.tarun.dc2.CustomViews.SquareLayout>
 
 
 
-    <!--Horizontal Linear Layout for EDITTEXT-->
+                <com.app.tarun.dc2.CustomViews.SquareLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="50dp"
+                   >
+
+                    <ImageButton
+                        android:src="@drawable/ic_continue"
+                        android:id="@+id/contactInfoContinueButton"
+                        android:scaleType="fitCenter"
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yellow_button_style"/>
+
+
+                </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+            </LinearLayout>
+
+
+<!--Horizontal Linear Layout for EDITTEXT-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="First Name"
-            android:inputType="text"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:inputType="text" />
 
 
         <EditText
+            android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Last Name"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
@@ -62,24 +104,30 @@ android:layout_height="fill_parent"
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/phoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
-            android:inputType="phone"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:editable="true"
+            android:inputType="phone"/>
 
 
         <EditText
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Address"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
         <EditText
+            android:id="@+id/address2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Address"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
@@ -91,19 +139,23 @@ android:layout_height="fill_parent"
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/landmark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Landmark"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
 
         <EditText
+            android:id="@+id/pincode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Pincode"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
@@ -116,31 +168,26 @@ android:layout_height="fill_parent"
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="City"
+            android:editable="true"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
 
 
         <EditText
+            android:id="@+id/state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="State"
             android:inputType="text"
             android:layout_marginTop="25dp"/>
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
 
 
-    </LinearLayout>
-
-
-
-
-
-</LinearLayout>
-
-</ScrollView>
-
-</LinearLayout>

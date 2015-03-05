@@ -1,0 +1,181 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#eeeeee"
+tools:context="com.app.tarun.dc2.Fragments.TimeSlotFragment"
+android:orientation="vertical"
+android:weightSum="6"
+android:id="@+id/container"
+android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/firstTimeSlot"
+                android:src="@drawable/ic_edit"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/orange_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        <TextView
+            android:id="@+id/firstTimeSlotText"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="9:00 AM-11:30 AM"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/secondTimeSlotText"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="12:00 PM-2:30 PM"/>
+
+
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:id="@+id/secondTimeSlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/thirdTimeSLot"
+                android:src="@drawable/ic_manually"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/yellow_button_style"/>
+
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+        <TextView
+            android:id="@+id/thirdTimeSLotText"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="3:00 PM-5:30 PM"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/fourthTimeSlotText"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="6:00 PM-8:30 PM"/>
+        <com.app.tarun.dc2.CustomViews.SquareLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:src="@drawable/ic_previous_orders"
+                android:id="@+id/fourthTimeSlot"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/sea_greenish_button_style"
+                android:layout_height="match_parent"/>
+
+        </com.app.tarun.dc2.CustomViews.SquareLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -28,6 +28,7 @@ import com.app.tarun.dc2.Fragments.BuyMedicineFragment;
 import com.app.tarun.dc2.Fragments.CartFragment;
 import com.app.tarun.dc2.Fragments.HomeScreenFragment;
 import com.app.tarun.dc2.Fragments.MedicineEditFragment;
+import com.app.tarun.dc2.Fragments.TimeSlotFragment;
 import com.app.tarun.dc2.Fragments.PrescriptionEditFragment;
 
 import java.io.File;
@@ -278,6 +279,20 @@ public class MainActivity extends ActionBarActivity implements OnFragmentInterac
 
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 ft.replace(R.id.container, orderFragment1,CartFragment.TAG);
+                ft.addToBackStack(null);
+                ft.commitAllowingStateLoss();
+                break;
+
+            case R.id.contactInfoContinueButton:
+                TimeSlotFragment timeSlotFragment =
+                        (TimeSlotFragment)getSupportFragmentManager().findFragmentByTag(TimeSlotFragment.TAG);
+                if(timeSlotFragment == null) {
+                    timeSlotFragment = TimeSlotFragment.newInstance();
+                }
+
+
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.replace(R.id.container, timeSlotFragment, TimeSlotFragment.TAG);
                 ft.addToBackStack(null);
                 ft.commitAllowingStateLoss();
                 break;
